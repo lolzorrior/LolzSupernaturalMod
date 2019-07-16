@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"side": "lolzsupernaturalmod:block/witch_wood",
+		"end": "lolzsupernaturalmod:block/witch_wood_top"
+	}
+}
