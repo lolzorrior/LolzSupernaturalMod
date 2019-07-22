@@ -1,7 +1,9 @@
 package com.lolzorrior.lolzsupernaturalmod.init;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.LogBlock;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -21,6 +23,6 @@ public class ModBlocks
     public static void registerBlocks(RegistryEvent.Register<Block> event)
     {
         event.getRegistry().registerAll(
-                new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(5.0F).harvestLevel(2).harvestTool(ToolType.AXE)).setRegistryName(MODID, "block_witch_wood"));
+                new LogBlock(MaterialColor.GREEN, Block.Properties.create(Material.WOOD, MaterialColor.GREEN).hardnessAndResistance(5.0F).harvestLevel(2).harvestTool(ToolType.AXE)).setRegistryName(MODID, "block_witch_wood"));
     }
 }
